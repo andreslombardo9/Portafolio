@@ -1,0 +1,600 @@
+/* importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background: #e1e4ff;
+    background: -webkit-linear-gradient(0deg, #e1e4ff 0%, #ccccff 100%);
+    background: linear-gradient(0deg, #e1e4ff 0%, #ccccff 100%);
+    
+}
+
+/* SECCION I N I C I O */
+.inicio {
+    background: linear-gradient(to right, #000c67, #007be5);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+    height: 90vh;
+    padding: 0 20px;
+}
+
+.inicio .contenido {
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+}
+
+.inicio header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.inicio .logo {
+    display: flex;
+    align-items: center;
+    color: #00deef;
+    font-size: 25px;
+}
+
+.inicio .logo i {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#inicio header nav a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+
+#inicio header nav a:hover {
+    border-bottom: 2px solid #ff5b00;
+}
+
+.inicio .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.inicio .redes a:hover {
+    color: #ff5b00;
+}
+
+.inicio .fila {
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.inicio .fila .col {
+    width: 50%;
+}
+
+.inicio .fila .col h1 {
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.inicio .fila .col h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.inicio .fila .col p {
+    margin-bottom: 20px;
+}
+
+.inicio .fila .col .contenedor-img {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    bottom: 100px;
+}
+
+.inicio .fila .col .contenedor-img img {
+    width: 100%;
+}
+
+.inicio .fila .col button {
+    background: none;
+    width: fit-content;
+    padding: 5px 40px;
+    border: 2px solid #ff5b00;
+    color: #fff;
+    background: linear-gradient(to right, #ff5b00, #ff9900);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.inicio .fila .col button:hover {
+    transform: scale(1.1);
+}
+
+#icono-nav {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    display: none;
+}
+
+#icono-nav:hover {
+    background-color: #3e3e3e;
+}
+
+
+
+/* Profile */
+.profile {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    top: 134px;
+    z-index: 20;
+}
+
+.profile-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #000c67, #007be5);
+    background-clip: padding-box;
+    padding: 10px;
+    border: none;
+    margin: 20px;
+}
+
+
+.profile-info {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.profile-info p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* SECCION T R A B A J O S */
+.trabajos {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 20px;
+}
+
+.trabajos h2 {
+    text-align: center;
+    margin:20px;
+}
+
+.trabajos nav {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.trabajos nav a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #007be5;
+    padding: 3px 10px;
+    border: 3px solid transparent;
+}
+
+.trabajos nav a:hover {
+    border: 3px solid #ff5b00;
+}
+
+/* Esta clase se agregrá dinámicamente cuando haya seleccionada una opción */
+.borde {
+    border: 3px solid #ff5b00 !important;
+}
+
+.trabajos .galeria .item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.trabajos .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap: 30px;
+}
+
+.trabajos .galeria .item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8d8d8d;
+    border-radius: 10px;
+}
+
+.trabajos .galeria .item .info {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: #e1e4ff;
+    background: -webkit-linear-gradient(0deg, #e1e4ff 0%, #0004ff 100%);
+    background: linear-gradient(0deg, #e1e4ff 0%, #0004ff 100%);
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.trabajos .galeria .item .info h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.trabajos .galeria .item .info span {
+    background-color: #007be5;
+    font-size: 18px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0 5px;
+}
+
+
+.trabajos .galeria .item .info a {
+    cursor: pointer;
+    text-decoration: none;
+    margin:20px;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    line-height: 30px;
+    background-color: #007be5;
+  }
+  .trabajos .galeria .item .info div a i{
+    margin-right: 10px;
+  }
+  .trabajos .galeria .item .info a:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  .trabajos .galeria .item .info a:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  .trabajos .galeria .item .info a:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }   
+.trabajos .galeria .item:hover .info {
+    opacity: 1;
+    top: 0;
+}
+
+/* SECCIÓN C O N T A C T O */
+.contacto {
+  
+    background:
+        linear-gradient(rgba(0, 12, 103, 1), rgba(0, 12, 103, .8)),
+        url(img/foto-contacto.png);
+    background-size: cover;
+    color: #fff;
+    margin-top: 100px;
+    padding: 80px 20px;
+}
+
+.contacto .contenedor-contacto {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.contacto .contenedor-contacto .fila {
+    display: flex;
+}
+
+.contacto .contenedor-contacto .fila .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.contacto .contenedor-contacto .info {
+    margin-bottom: 30px;
+    border-left: 3px solid #8d8d8d;
+    padding-left: 8px;
+}
+
+.contacto .contenedor-contacto .info p {
+    color: #8d8d8d;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #8d8d8d;
+    margin-bottom: 20px;
+    outline: none;
+    color: #ff5b00;
+}
+.button-contact-send{
+    cursor: pointer;
+}
+.contacto .btn {
+    background-color: none;
+    padding: 5px 40px;
+    border: 2px solid;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff5b00, #ff9900);
+}
+
+footer {
+
+    background-color: #333;
+    font-size: .5rem;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:1180px) {
+    .inicio {
+        clip-path: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+
+    #nav {
+        display: none;
+    }
+
+    #nav.responsive {
+        background-color: rgba(0, 0, 0, .9);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    }
+
+    #nav.responsive a {
+        font-size: 30px;
+    }
+
+    #icono-nav {
+        display: block;
+    }
+
+    .inicio {
+        height: auto;
+    }
+
+    .inicio .fila {
+        display: block;
+    }
+
+    .inicio .fila .col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .inicio .fila .col h2 {
+        margin-top: 20px;
+    }
+
+    .inicio .fila .col .contenedor-img {
+        width: 80%;
+        margin-top: 30px;
+        position: relative;
+        bottom: 0px;
+
+    }
+
+
+    .servicios {
+        position: static;
+        padding: 20px;
+    }
+
+    .servicios .fila {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .servicios .fila .col {
+        width: 70%;
+        margin: auto;
+    }
+
+    .servicios .fila .col .card {
+        margin-bottom: 20px;
+    }
+
+    .habilidades {
+        position: static;
+    }
+
+    .trabajos nav a {
+        margin: 0 5px;
+    }
+
+    .contacto .fila {
+        display: block !important;
+    }
+
+    .contacto .fila .col {
+        text-align: center;
+        width: 100% !important;
+    }
+
+    .contacto .fila .col .info {
+        float: left;
+        font-size: 12px;
+        width: 25%;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .profile-img img {
+        overflow-x: hidden;
+        width: 300px;
+        height: 350px;
+        border-radius: 50%;
+        /* Coloca el gradiente como fondo */
+        background-image: linear-gradient(to right, #000c67, #007be5);
+        /* Utiliza background-clip para aplicar el gradiente como "borde" */
+        background-clip: padding-box;
+        /* Ajusta el tamaño del gradiente para que se vea como un borde de 5px */
+        padding: 10px;
+        /* Elimina el borde original creado con border: 5px solid; */
+        border: none;
+    }
+      /* Establecer el tamaño para pantallas más pequeñas (hasta 768px) */
+      .skill {
+        flex-basis: 60%; /* Hacer que cada habilidad ocupe todo el ancho disponible en pantallas pequeñas */
+        margin: 20px 0; /* Espaciado entre habilidades en pantallas más pequeñas */
+    }
+
+    /* Opcional: Asegurarse de que el logo y el nombre estén centrados en pantallas pequeñas */
+   
+}
+
+/* Estilos generales para la sección de habilidades */
+.skills {
+    padding: 40px 0;
+    
+    /* Espaciado interno superior e inferior (ajústalo según tu diseño) */
+}
+
+.title-secction{
+    text-align: center;
+    /* Centrar el título horizontalmente (opcional) */
+    color:#007be5;
+    margin-bottom: 20px;
+    /* Añadir margen inferior al título (ajústalo según tu diseño) */
+}
+
+/* Estilo para el contenedor de las habilidades */
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilo para cada habilidad (card) */
+.skill {
+    display: flex;
+    /* Mostrar el contenido en línea */
+    align-items: center;
+    /* Centrar verticalmente los elementos dentro de la card */
+    max-width: 400px;
+    /* Establecer el ancho máximo de la card */
+    margin: 0 20px;
+    /* Añadir margen a cada card (ajústalo según tu diseño) */
+    padding: 10px;
+    /* Añadir un espacio interno a la card */
+    border: 1px solid #ccc;
+    /* Añadir un borde a la card (opcional) */
+    border-radius: 5px;
+    /* Añadir bordes redondeados (opcional) */
+    background-color: #007be5;
+}
+
+/* Estilo para el logo (imagen) dentro de cada habilidad (card) */
+.skill img {
+    width: 60px;
+    /* Establecer el ancho del logo (ajústalo según tu diseño) */
+    height: auto;
+    /* Asegurar que la altura se ajuste automáticamente para mantener la proporción */
+    margin-right: 10px;
+    /* Añadir un margen derecho para separar el logo del texto (opcional) */
+}
+
+/* Estilo para el nombre (texto) dentro de cada habilidad (card) */
+.skill span {
+    font-size: 18px;
+    color: #ffffff;
+    /* Tamaño del texto del nombre (ajústalo según tu diseño) */
+}
+/* Estilo para el mensaje de éxito */
+#success-message {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

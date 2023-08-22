@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="img\briefcase-solid.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"
+        integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Porfolio</title>
+</head>
+
+<body>
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <nav id="nav" class="">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#sobreMi">Sobre Mi</a>
+                        <a href="#trabajos">Trabajos</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes">
+                        <a href="https://github.com/andreslombardo9" target="_blank"><i
+                                class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/andrés-lombardo-687b85208/" target="_blank"><i
+                                class="fa-brands fa-linkedin fa-xl"></i></a>
+                    </div>
+                </header>
+
+                <div class="fila" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
+                    <div class="col">
+                        <h1>Andrés Lombardo</h1>
+                        <h2>Desarrollador Fullstack || Técnico en informática</h2>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="img/Code typing Customizable Cartoon Illustrations _ Bro Style.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+    <section class="profile" id="sobreMi">
+        <div class="circle-trans"></div>
+        <div class="circle"></div>
+        <div class="profile-info">
+            <div class="profile-img"><img
+                    src="./img/IMG-20201213-WA0378.jpg" alt=""></div>
+            <p >¡Hola! Soy Andrés Lombardo, un
+                apasionado de la programación. Me gradué como Técnico en Informática en el año 2019 en la Escuela De
+                Educación Secundaria Técnica Nº1 "Mariano Moreno", y desde entonces, he estado explorando en el mundo
+                del desarrollo de sofware. Mi principal objetivo es crear experiencias digitales atractivas y
+                funcionales, combinando tanto el diseño estético como la lógica detrás de cada proyecto. Me encanta
+                aprender nuevas tecnologías y mantenerme actualizado en un campo tan dinámico como la programación.
+                Siempre estoy entusiasmado con los desafíos que enfrento en cada proyecto, y me esfuerzo por encontrar
+                soluciones creativas y eficientes.
+            </p>
+        </div>
+    </section>
+    <section class="skills" >
+        <h2 class="title-secction">Mis Habilidades</h2>
+        <div class="skill-list">
+            <div class="skill">
+                <img src="./img/Search results for_ react _ Page_ 1.png" alt="">
+                <span>React</span>
+            </div>
+            <div class="skill">
+                <img src="./img/tailwind.png" alt="">
+                <span>TailwindCSS</span>
+            </div>
+            <div class="skill">
+                <img src="./img/nodejs.png" alt="">
+                <span>Node.js</span>
+            </div>
+            <div class="skill">
+                <img src="./img/mongoDB.png" alt="">
+                <span>MongoDB</span>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- sección trabajos -->
+    <section class="trabajos" id="trabajos">
+        <h2 class="title-secction">Mis Trabajos</h2>
+
+
+        <div class="galeria">
+            <div class="item disenio">
+                <img src="img//weatherWidgetphoto.png" alt="">
+                <div class="info">
+                    <h3>Weather Widget</h3>
+                    <span>React</span>
+                    <div>
+                        <a href="https://weather-finder-e72q.vercel.app" target="_blank"><i
+                                class="fa-solid fa-globe"></i>Sitio Web</a>
+                        <a href="https://github.com/andreslombardo9/Weather-Finder" target="_blank"><i
+                                class="fa-brands fa-github"></i>Repositorio</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="img/crudFullStackCarspng.png" alt="">
+                <div class="info">
+                    <h3>Crud Full Stack Cars</h3>
+                    <span>Vite</span><span>Node.js</span><span>MongoDB</span>
+                    <div>
+                        <a href="https://github.com/andreslombardo9/Trabajo-practico-integrador---CRUD"
+                            target="_blank"><i class="fa-brands fa-github"></i>Repositorio</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="item disenio">
+                <img src="img\tapiceriaBenzoProyect-photo.png" alt="">
+                <div class="info">
+                    <h3>Tapiceria Benzo Web</h3>
+                    <span>React</span>
+                    <span>Bootstrap</span>
+                    <div>
+                        <a href="https://tapiceriabenzoweb.web.app" target="_blank"><i
+                                class="fa-solid fa-globe"></i>Sitio Web</a>
+                        <a href="https://github.com/andreslombardo9/TapiceriaBenzoWeb" target="_blank"><i
+                                class="fa-brands fa-github"></i>Repositorio</a>
+                    </div>
+
+                </div>
+            </div>
+            
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- sección contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Email</h3>
+                        <p>andres.lombardo.96@hotmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono</h3>
+                        <p>+54 9 2346-584909</p>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>Argentina</p>
+                    </div>
+                    <div class="info">
+                        <h3>Ciudad</h3>
+                        <p>Chivilcoy, Provincia de Buenos Aires</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <form action="https://formsubmit.co/andres.lombardo.999@gmail.com" method="POST" id="contact-form">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+
+                        <input type="submit" value="Enviar" class="button-contact-send">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                    <div id="success-message" style="display: none;">
+                        <p>Mensaje enviado con éxito</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Creado por Andrés Lombardo - 2023 </p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
