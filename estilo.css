@@ -1,11 +1,16 @@
 /* importamos la fuente */
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:wght@600&family=Kanit:wght@500;600&family=Nunito:wght@800&family=REM:wght@300&family=Signika+Negative:wght@700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'M PLUS Rounded 1c';
+    font-family: 'Abril Fatface';
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'REM', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
 }
 
 html {
@@ -13,11 +18,11 @@ html {
 }
 
 body {
-
+   
     background: #e1e4ff;
     background: -webkit-linear-gradient(0deg, #e1e4ff 0%, #ccccff 100%);
     background: linear-gradient(0deg, #e1e4ff 0%, #ccccff 100%);
-    
+
 }
 
 /* SECCION I N I C I O */
@@ -79,6 +84,7 @@ body {
 
 .inicio .fila {
     display: flex;
+    flex-direction: column;
     margin-top: 50px;
     padding-bottom: 100px;
 }
@@ -93,6 +99,7 @@ body {
 }
 
 .inicio .fila .col h2 {
+    letter-spacing: 2px;
     margin-bottom: 15px;
     font-size: 20px;
 }
@@ -146,6 +153,7 @@ body {
 
 /* Profile */
 .profile {
+
     margin: 30px auto;
     display: flex;
     align-items: center;
@@ -200,7 +208,7 @@ body {
 
 .trabajos h2 {
     text-align: center;
-    margin:20px;
+
 }
 
 .trabajos nav {
@@ -239,6 +247,8 @@ body {
 }
 
 .trabajos .galeria .item {
+    width: 100%;
+    min-height: 250px;
     position: relative;
     overflow: hidden;
     border: 1px solid #8d8d8d;
@@ -270,7 +280,7 @@ body {
     font-size: 18px;
     color: #ffffff;
     display: inline-block;
-    margin: 0 3px;
+    margin: 5px 3px;
     padding: 0 5px;
 }
 
@@ -278,7 +288,7 @@ body {
 .trabajos .galeria .item .info a {
     cursor: pointer;
     text-decoration: none;
-    margin:20px;
+    margin: 10px;
     min-width: 130px;
     height: 40px;
     color: #fff;
@@ -293,20 +303,24 @@ body {
     border: none;
     line-height: 30px;
     background-color: #007be5;
-  }
-  .trabajos .galeria .item .info div a i{
+}
+
+.trabajos .galeria .item .info div a i {
     margin-right: 10px;
-  }
-  .trabajos .galeria .item .info a:hover {
+}
+
+.trabajos .galeria .item .info a:hover {
     border-radius: 5px;
     padding-right: 24px;
-    padding-left:8px;
-  }
-  .trabajos .galeria .item .info a:hover:after {
+    padding-left: 8px;
+}
+
+.trabajos .galeria .item .info a:hover:after {
     opacity: 1;
     right: 10px;
-  }
-  .trabajos .galeria .item .info a:after {
+}
+
+.trabajos .galeria .item .info a:after {
     content: "\00BB";
     position: absolute;
     opacity: 0;
@@ -315,7 +329,8 @@ body {
     top: 0;
     right: -20px;
     transition: 0.4s;
-  }   
+}
+
 .trabajos .galeria .item:hover .info {
     opacity: 1;
     top: 0;
@@ -323,7 +338,7 @@ body {
 
 /* SECCIÓN C O N T A C T O */
 .contacto {
-  
+
     background:
         linear-gradient(rgba(0, 12, 103, 1), rgba(0, 12, 103, .8)),
         url(img/foto-contacto.png);
@@ -375,9 +390,11 @@ body {
     outline: none;
     color: #ff5b00;
 }
-.button-contact-send{
+
+.button-contact-send {
     cursor: pointer;
 }
+
 .contacto .btn {
     background-color: none;
     padding: 5px 40px;
@@ -403,10 +420,15 @@ footer {
         clip-path: none;
     }
 }
+@media screen and (min-width:800px) {
 
+    .inicio .fila{
+        flex-direction: row;
+    }
+}
 @media screen and (max-width:800px) {
 
-
+  
     #nav {
         display: none;
     }
@@ -437,10 +459,7 @@ footer {
     .inicio {
         height: auto;
     }
-
-    .inicio .fila {
-        display: block;
-    }
+   
 
     .inicio .fila .col {
         width: 100%;
@@ -459,7 +478,10 @@ footer {
 
     }
 
-
+    .trabajos .galeria .item {
+        min-height: 250px;
+      
+    }
     .servicios {
         position: static;
         padding: 20px;
@@ -523,27 +545,30 @@ footer {
         /* Elimina el borde original creado con border: 5px solid; */
         border: none;
     }
-      /* Establecer el tamaño para pantallas más pequeñas (hasta 768px) */
-      .skill {
-        flex-basis: 60%; /* Hacer que cada habilidad ocupe todo el ancho disponible en pantallas pequeñas */
-        margin: 20px 0; /* Espaciado entre habilidades en pantallas más pequeñas */
+
+    /* Establecer el tamaño para pantallas más pequeñas (hasta 768px) */
+    .skill {
+        flex-basis: 60%;
+        /* Hacer que cada habilidad ocupe todo el ancho disponible en pantallas pequeñas */
+        margin: 20px 0;
+        /* Espaciado entre habilidades en pantallas más pequeñas */
     }
 
     /* Opcional: Asegurarse de que el logo y el nombre estén centrados en pantallas pequeñas */
-   
+
 }
 
 /* Estilos generales para la sección de habilidades */
 .skills {
     padding: 40px 0;
-    
+
     /* Espaciado interno superior e inferior (ajústalo según tu diseño) */
 }
 
-.title-secction{
+.title-secction {
     text-align: center;
     /* Centrar el título horizontalmente (opcional) */
-    color:#007be5;
+    color: #007be5;
     margin-bottom: 20px;
     /* Añadir margen inferior al título (ajústalo según tu diseño) */
 }
@@ -590,6 +615,7 @@ footer {
     color: #ffffff;
     /* Tamaño del texto del nombre (ajústalo según tu diseño) */
 }
+
 /* Estilo para el mensaje de éxito */
 #success-message {
     display: none;
